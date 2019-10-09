@@ -12,7 +12,7 @@ app.get('/', (req,res)=> {
     res.render('pages/index');
 });
 
-var PORT = 3000;
+var PORT = 8080;
 
 app.listen(PORT, () => {
     console.log(`server started at PORT ${PORT}`);
