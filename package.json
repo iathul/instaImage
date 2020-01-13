@@ -9,6 +9,7 @@
   "author": "Athul Joy",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "instagram-node": "^0.5.8"

@@ -2,6 +2,8 @@
 
 const express = require('express');
 const ig      = require('instagram-node').instagram();
+const dotenv  = require('dotenv');
+dotenv.config()
 
 const app     = express();
 
@@ -9,7 +11,7 @@ app.use(express.static(__dirname +'/public'));
 app.set('view engine', 'ejs');
 
 ig.use({
-    access_token: '3677744762.1677ed0.7efeafe4795342a6832da44910c74a97',
+    access_token: process.env.token,
 });
 
 app.get('/', (req,res)=> {
